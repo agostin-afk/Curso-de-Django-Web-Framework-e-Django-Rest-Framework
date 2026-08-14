@@ -4,7 +4,8 @@ from django.shortcuts import render
 
 
 def home(request):
-    return render(request, 'home.html')
+    context = {'name': 'Agosto'}
+    return render(request, 'recipes/pages/home.html', context)
 
 
 def contato(request):
